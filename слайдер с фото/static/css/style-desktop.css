@@ -1,0 +1,180 @@
+@font-face {
+  font-family: 'Nunito Sans';
+  src: url('../fonts/NunitoSans-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Yeseva One';
+  src: url('../fonts/YesevaOne-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 1300px;
+  margin: 0px;
+  font-family: 'Nunito Sans', Helvetica, Arial, sans-serif;
+}
+
+.projects {
+  height: 783px;
+  padding-top: 107px;
+  background-color: #131313;
+}
+
+.projects-content {
+  width: 1300px;
+  height: 551px;
+  margin: 0px auto auto auto;
+  padding: 0px 64px 0px;
+  display: grid;
+  grid-template-columns: 190px 303px 679px;
+  grid-template-rows: 69px 228px 107px 107px 40px;
+  grid-template-areas:
+    "A A C"
+    "B B I"
+    "D E I"
+    "F G I"
+    "H H I";
+}
+
+.projects-title-area {
+  grid-area: B;
+  padding: 0px 40px 0px 0px;
+}
+
+.projects-title-area > .title {
+  letter-spacing: -0.07em;
+}
+
+.projects-toggle-area {
+  grid-area: C;
+  display: flex;
+  column-gap: 61px;
+  align-items: start;
+  flex-wrap: wrap;
+}
+
+.projects-info-area1 {
+  grid-area: D;
+}
+
+.projects-info-area2 {
+  grid-area: E;
+}
+
+.projects-info-area3 {
+  grid-area: F;
+}
+
+.projects-info-area4 {
+  grid-area: G;
+}
+
+.projects-switch-area {
+  grid-area: H;
+  display: flex;
+  align-items: flex-end;
+}
+
+.project-image-area {
+  grid-area: I;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.title {
+  margin: 0px;
+  color: #E3B873;
+  font-family: 'Yeseva One', Georgia, Times, 'Times New Roman', serif;
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+
+.projects-text {
+  margin: 25px 0px 0px;
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 27px;
+}
+
+.info-title {
+  margin: 0px;
+  font-family: 'Yeseva One', Georgia, Times, 'Times New Roman', serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.projects-info-title {
+  color: #E3B873;
+  line-height: 25px;
+  text-transform: uppercase;
+}
+
+.projects-info-text {
+  margin: 9px 0px 0px;
+  color: #FFFFFF;
+  font-size: 13px;
+  line-height: 21px;
+}
+
+.projects-switch-area > .arrow-button {
+  width: 41.46px;
+  height: 13.28px;
+  padding: 0;
+  background: url(../icons/arrow.svg) center / contain no-repeat transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.projects-switch-area > .arrow-button_left {
+  margin-right: 20.73px;
+  transform: rotate(180deg);
+}
+
+.projects-switch-area > .arrow-button_right {
+  margin-left: 20.73px;
+}
+
+.dot-button {
+  width: 9.57px;
+  height: 9.57px;
+  margin: 1.855px 8.77px;
+  padding: 0;
+  background: url(../icons/dot.svg) center / contain no-repeat transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.dot-button.active, .dot-button:hover, .dot-button:focus {
+  background-image: url(../icons/dot_active.svg);
+}
+
+.project-toggle {
+  padding: 0;
+  color: rgba(255, 255, 255, 0.3);
+  font-family: 'Yeseva One', Georgia, Times, 'Times New Roman', serif;
+  font-size: 14px;
+  line-height: 19px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.project-toggle.active, .project-toggle:hover, .project-toggle:focus {
+  color: #E3B873;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 10px;
+}
